@@ -83,9 +83,9 @@ class _TransactionFormState extends State<TransactionForm> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  // ignore: prefer_const_constructors
-                  // ignore: unnecessary_null_comparison
+                  // ignore: unnecessary_null_comparison, prefer_const_constructors
                   Text(
+                    // ignore: unnecessary_null_comparison
                     _selectedDate == null
                         ? 'Nenhuma data selecionada!'
                         : 'Data Selecionada: ${DateFormat('dd/MM/y').format(_selectedDate)}',
